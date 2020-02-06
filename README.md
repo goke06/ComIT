@@ -1,2 +1,2 @@
 # ComIT
-Software Development
+Execrcises
