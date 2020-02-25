@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create User</title>
+</head>
+<body>
+    <h1>Create User</h1>
+    <hr/>
+    <form action="create-user.html" method="GET">
+        <div>
+            <label for="email">E-Mail: </label>
+            <input type="text" name="email" placeholder="Email" required>
+        </div>
+        <div>
+            <label for="username">Username: </label>
+            <input type="text" name="username" placeholder="Username" size="30" maxlength="12">
+        </div>
+        <div>
+            <label for="password">Passwod: </label>
+            <input type="text" name="password" placeholder="Password" size="30" maxlength="8" required>
+        </div>
+        <div>
+            <label for="bio">Bio:</label><br/>
+            <textarea name="bio">Provide a brief description of yourself.</textarea>
+        </div>
+        <fieldset>
+            <legend>Interests</legend>
+            <div>
+                <label for="superhero">Select your favorite superhero:</label>
+                <input type="radio" name="superhero" value="Superman">Superman
+                <input type="radio" name="superhero" value="Batman">Batman
+                <input type="radio" name="superhero" value="Wonder Woman" checked>Wonder Woman
+                <input type="radio" name="superhero" value="Flash">Flash
+                <input type="radio" name="superhero" value="Thor">Thor
+                <input type="radio" name="superhero" value="Hulk">Hulk
+            </div>
+            <div>
+                <label for="videogames">Select your favorite video game: </label>
+                <input type="checkbox" name="videogames" value="Fifa" checked>Fifa
+                <input type="checkbox" name="videogames" value="NHL">NHL
+                <input type="checkbox" name="videogames" value="Resident Evil">Resident Evil
+                <input type="checkbox" name="videogames" value="Uncharted" checked>Uncharted
+                <input type="checkbox" name="videogames" value="Chrono Trigger">Chrono Trigger
+            </div>
+        </fieldset>
+        <input type="hidden" name="userid" value="2300">
+        <input type="submit" value="Create User">
+    </form>
+</body>
+</html>
+
+<body>
+    <form action="send-email.php" method="post">
+        <input type="email" name="email" />
+        <input type="text" name="subject" />
+        <textarea name="body"></textarea>
+        <input type="submit" value="Send!" />
+      </form>
+    <form>
+        Select your favourite Harry Potter wizzards
+        <input type="checkbox" name="wizards" value="harry potter" checked />
+        Harry Potter
+        <input type="checkbox" name="wizards" value="hermione granger" checked />
+        Hermione Granger
+        <input type="checkbox" name="wizards" value="ron weasley" />
+        Ron Weasley
+        <input type="checkbox" name="wizards" value="aberforth dumbledore" />
+        Aberforth Dumbledore
+      </form>
+    <form>
+        Are you a Jets Fan?
+        <input type="radio" name="JetsFan" value="true" /> oh yeah go jets!
+        <input type="radio" name="Jets Fan" value="false" /> no
+    </form>
+    <form>
+        <input type="submit" value="Submit this form" />
+      </form>
+      <textarea name="body">This would be what is inside the textarea</textarea>
+
+      <form>
+        <label>First Name:</label>
+        <input type="text" name="first_name" />
+      </form>
+      <form>
+        <label for="first_name">Name:</label>
+        <input type="text" name="first_name" id="first_name" />
+      </form>
+      <button>click me!</button>
+      <form>
+        <fieldset>
+          <legend>User Form</legend>
+          <label>First Name:</label>
+          <input type="text" name="first_name" />
+          <label>Last Name:</label>
+          <input type="text" name="last_name" />
+        </fieldset>
+      </form>
+      <fieldset>
+          <legend>film types</legend>
+          <labe>Film Names</label>
+            <input type="text" name="Film_Names" />
+            <label>Actors</label>
+            <input type="text" name="Actors" />
+      </fieldset>
+</html>
